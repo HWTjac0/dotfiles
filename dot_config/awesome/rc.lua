@@ -185,33 +185,33 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = 30})
+    -- s.mywibox = awful.wibar({ position = "top", screen = s, height = 30})
     -- Add widgets to the wibox
-    s.mywibox:setup 
-    {
-    {
-        layout = wibox.layout.align.horizontal,
-        { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
-	    spacing = 10,
-            s.mytaglist,
-            s.mypromptbox,
-        },
-        s.mytasklist, -- Middle widget
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
-	    spacing = 20,
-            wibox.widget.systray(),
-            mytextclock,
-	    spacing = 10,
-            s.mylayoutbox,
-        },
-    },
-    color = "#80aa80",
-    margins = 5,
-    widget = wibox.container.margin
-    }
+    -- s.mywibox:setup 
+    -- {
+    -- {
+    --     layout = wibox.layout.align.horizontal,
+    --     { -- Left widgets
+    --         layout = wibox.layout.fixed.horizontal,
+	  --   spacing = 10,
+    --         s.mytaglist,
+    --         s.mypromptbox,
+    --     },
+    --     s.mytasklist, -- Middle widget
+    --     { -- Right widgets
+    --         layout = wibox.layout.fixed.horizontal,
+    --         mykeyboardlayout,
+	  --   spacing = 20,
+    --         wibox.widget.systray(),
+    --         mytextclock,
+	  --   spacing = 10,
+    --         s.mylayoutbox,
+    --     },
+    -- },
+    -- color = "#80aa80",
+    -- margins = 5,
+    -- widget = wibox.container.margin
+    -- }
 end)
 -- }}}
 
