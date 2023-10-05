@@ -13,7 +13,7 @@ awful.screen.connect_for_each_screen(function (s)
 
   }
   bar = awful.wibar({
-    position = "bottom",
+    position = "top",
     screen = s,
     height = 35,
     bg = "#11141a"
@@ -27,6 +27,7 @@ awful.screen.connect_for_each_screen(function (s)
       spacing = 5,
       {
         layout = wibox.layout.fixed.horizontal,
+        spacing = 5,
         layout_box(s),
         taglist(s)
       },
