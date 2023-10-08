@@ -432,7 +432,8 @@ clientbuttons = gears.table.join(
         awful.mouse.client.resize(c)
     end)
 )
-
+mykeybinds = require("ui.keybinds")
+globalkeys = gears.table.join(globalkeys, mykeybinds)
 -- Set keys
 root.keys(globalkeys)
 -- }}}
