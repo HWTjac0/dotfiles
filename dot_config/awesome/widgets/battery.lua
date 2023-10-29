@@ -1,3 +1,4 @@
+local naughty = require("naughty")
 local wibox = require("wibox")
 local upower = require("lgi").require("UPowerGlib")
 local floor = require("math").floor
@@ -39,12 +40,8 @@ local function new()
   return widget
 end
 
-if upower.Client:get_display_device() ~= nil then  
-  return setmetatable(battery_widget, {
-    __call = function (_, ...)
-      return new(...)
-    end,
-  }) 
-else 
-  return wibox.widget{}
-end
+return setmetatable(battery_widget, {
+  __call = function (_, ...)
+    return new(...)
+  end,
+}) 

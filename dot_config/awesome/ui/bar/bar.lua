@@ -1,9 +1,5 @@
 local awful = require("awful")
-local gears = require("gears")
-local layout_box = require("widgets.layout_box")
 local tasklist = require("widgets.tasklist")
-local taglist = require("widgets.taglist")
-local battery = require("widgets.battery")
 
 local right = require("ui.bar.right")
 local left = require("ui.bar.left")

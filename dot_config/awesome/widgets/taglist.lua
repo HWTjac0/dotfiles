@@ -37,6 +37,7 @@ return function (s)
             layout = wibox.layout.fixed.horizontal,
             {
               id = "text_role",
+              valign = "center",
               widget = wibox.widget.textbox
             }
           }
