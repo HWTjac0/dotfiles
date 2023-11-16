@@ -13,15 +13,16 @@ battery_widget.status = {
 
 local function getBatteryIcon(device)
   local percentage = device.percentage
+  local config_dir = gears.filesystem.get_configuration_dir()
   local image = ""
   if percentage >= 75 then
-    image = "/home/jac/Pictures/wm_assets/batteryFull.png"
+    image = config_dir .. "/assets/batteryFull.png"
   elseif percentage >= 50 then
-    image = "/home/jac/Pictures/wm_assets/batteryAlmostFull.png"
+    image = config_dir .. "/assets/batteryAlmostFull.png"
   elseif percentage >= 25 then
-    image = "/home/jac/Pictures/wm_assets/batteryHalf.png"
+    image = config_dir .. "/assets/batteryHalf.png"
   else
-    image = "/home/jac/Pictures/wm_assets/batteryAlmostEmpty.png"
+    image = config_dir .. "/assets/batteryAlmostEmpty.png"
   end
 
   return image
