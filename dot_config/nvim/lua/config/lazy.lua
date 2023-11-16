@@ -32,7 +32,8 @@ require('lazy').setup({
         dependencies = { 'nvim-lua/plenary.nvim' }
       },
       {'nvim-tree/nvim-tree.lua'},
-      { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+      { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+      {'nvim-lualine/lualine.nvim'}
     }
   }
 })
